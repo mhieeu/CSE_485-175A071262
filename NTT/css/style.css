@@ -58,6 +58,106 @@
 }
 /* slideshow */
 #slideshow img{
+    margin-top: 20px;
     width: 100%;
     height: 400px;
+}
+.fa-angle-left{
+    color: gray;
+    font-size: 40px;
+}
+.fa-angle-right{
+    color: gray;
+    font-size: 40px;
+}
+#slideCaseroulButton{
+    text-align: center;
+    padding-top: 30px;
+    opacity: 0.6;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 200px;
+}
+#carousel-arrow{
+    float: right;
+    overflow: auto;
+    width: 100px;
+    height: 100px;
+}
+#slideTitle .title{
+    color: white;
+    font-size: 25px;
+}
+.fa-angle-left:hover{
+    color: white;
+}
+.fa-angle-right:hover{
+    color: white;
+}
+#slideTitle{
+    text-align: center;
+    padding-top: 30px;
+    opacity: 0.6;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    bottom: 100px;
+}
+#slideTitle .title{
+    color: white;
+    font-size: 25px;
+}
+.carousel-controls{
+    height: 0;
+}
+/* content */
+#content{
+    display: flex;
+    margin-top: -60px;
+}
+.c-title{
+    font-size: 22px;
+}
+.fix{
+    background-color: #aa914d;
+    width: 60px;
+    height: 1px;
+}
+.article{
+    display: flex;
+}
+.article img{
+    height: 130px;
+    width: 100%;
+}
+.a-title{
+    font-size: 20px;
+    color: black;
+    width: 90%;
+}
+.a-title:hover{
+    text-decoration: none;
+    color: black;
+}
+.a-content{
+    font-size: 14px;
+}
+.link-list{
+    list-style-type: none;
+    margin-top: 15px;
+}
+.no-white{
+    font-size: 20px;
+}
+.no-white:hover{
+    color: gray;
+}
+.link{
+    font-size: 15px;
+    color: gray;
+}
+.link:hover{
+    color: gray;
 }
