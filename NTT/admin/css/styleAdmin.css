@@ -1,0 +1,142 @@
+*{
+    box-sizing: 0;
+}
+/* INDEX */
+.container{
+    width: auto !important;
+    max-width: 1200px;
+}
+nav{
+    background-color: #024282;
+    display: inline;
+}
+form{
+    display: inline;
+}
+#searchbox{
+    padding: 8px 12px;
+    background-color: #04315e;
+    width: auto;
+}
+#btn-search{
+    background-color: #04315e;
+    margin: 0px 0px 0px -2px;
+    padding: 8px 16px 6px 16px;
+}
+#btn-search:hover{
+    background-color: #04315e;
+}
+#btn-search:focus{
+    outline: none;
+}
+.color-hotline{
+    color: #fdb913;
+}
+.color-hotline:hover{
+    color: #fdb913;
+}
+#flag{
+    float: right;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.white{
+    color: white;
+}
+.white:hover{
+    color: white;
+    text-decoration: underline;
+}
+.fa.fa-bars{
+    color: white;
+}
+.h-link{
+    display: inline;
+}
+.h-left{
+    color: #0275D8;
+    margin-left: 50px;
+    font-size: 19px;
+}
+.h-left:hover{
+    text-decoration: none;
+    color: rgba(173, 173, 16, 0.781);
+}
+/* HOME */
+.lbars{
+    text-align: right;
+    background-color: #024282;
+    color: #aa914d;
+}
+/* FOOTER */
+.f-color{
+    background-color: #024282;
+}
+.footer-fix{
+    width: 300px;
+    padding: 0;
+}
+.f-head{
+    margin: 30px 0px 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.f-head:hover{
+    color: white;
+}
+.f-box{
+    width: 100%;
+    background-color: #42719f;
+    text-align: left;
+}
+.f-box:hover{
+    background-color: white;
+    text-decoration: none;
+}
+.gray{
+    color: gray;
+    margin-left: -40px;
+    font-size: 15px;
+}
+.gray:hover{
+    color: #aa914d;
+}
+.white1{
+    color: #024282;
+}
+.white1:hover{
+    color: #024282;
+    text-decoration: none;
+}
+.size14{
+    font-size: 14px;
+}
+.mtop30{
+    margin-top: 30px;
+}
+.list-unstyle{
+    list-style: none;
+}
+/* LOGIN */
+.center-login{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.red{
+    color: red;
+}
+/* REGIST */
+.register{
+    width: 50%;
+    text-align: left;
+    margin: auto;
+}
+#btnRegister{
+    margin: 5% 40% 0;
+}
+/* HOPTAC */
+.marginb30{
+    margin-bottom: 30px;
+}

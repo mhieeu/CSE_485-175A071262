@@ -1,0 +1,23 @@
+<!-- BEGIN: LOGIN-->
+<!-- <head>
+    <script>
+        function dangky(){
+            window.location.href = "{baseUrl}?m=regist&a=regist";
+        }
+    </script>
+</head> -->
+    <form method="POST" name="frmLogin">
+        <br>
+        <div class="center-login form-group">
+            <input type="text" name="txtUserName" class="form-control" placeholder="Tên đăng nhập/Email">
+            <br>
+            <input type="password" name="txtUserPass" class="form-control" placeholder="Mật khẩu">
+            <br>
+            <span class="red">{login_mess}</span>
+            <br>
+            <input type="submit" value="Đăng nhập">
+            <!-- <input type="button" value="Đăng ký" onclick="dangky()">     -->
+        </div>
+        <br>
+    </form>
+<!-- END: LOGIN-->
