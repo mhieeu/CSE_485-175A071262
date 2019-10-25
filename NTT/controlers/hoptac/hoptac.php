@@ -7,16 +7,22 @@
     if(!$conn){
         die("Xảy ra lỗi");
     }
-
-    $sql = "SELECT * FROM hoptac";
-    $result = mysqli_query($conn,$sql);
-    while($arHopTac = mysqli_fetch_assoc($result)){
-        // extract($arHopTac);
-        // $xtpht1->assign('PAPER',array('header'=>$header,'content'=>$content,'img_url'=>$img_url));
-        // $xtpht1->assign('PAPER',$arHopTac);
-        $xtpht1->insert_loop('HOPTAC.PAPER',array('PAPER'=>$arHopTac));   
+    $condition = '1=1';
+    $arr = $db->fetchAll('hoptac',$condition);
+    if(count($arr)>0){
+        foreach($arr as $arHopTac){
+            $xtpht1->insert_loop('HOPTAC.PAPER',array('NOIDUNG'=>$arHopTac));
+        }
     }
+    // $sql = "SELECT * FROM hoptac";
+    // $result = mysqli_query($conn,$sql);
+    // $arHopTac = mysqli_fetch_assoc($result);
+    // extract($arHopTac);
+    // $xtpht1->assign('PAPER',array('header'=>$header,'content'=>$content,'img_url'=>$img_url));
+        var_dump($arHopTac);
+        
+    //$xtpht1->insert_loop('PAPER',array('PAPER'=>$arHopTac));   
+    
 
-    // $xtpht->parse('HOPTAC.PAPER');
     $xtpht1->parse('HOPTAC');
     $error = $xtpht1->text('HOPTAC');

@@ -2,10 +2,9 @@
     if($_SESSION['LOGIN_SUCCESS'] == ''){
         $app->redir($baseUrl."admin/?m=login&a=login");
     }
-    $xtpht = new XTemplate("views/uploadHopTac.html");
-    
-    //Xử lí upload ảnh
-    $file = $_FILES["img_upload"];
+    $xtpu = new XTemplate("views/update.html");
+
+    $file = $_FILES["img"];
     $f = 1;
     print_r($file);
 
@@ -35,21 +34,21 @@
         return strtolower($ext); //viết thường
     }
 
-    //Xử lí database
     if($_POST){
         $conn = mysqli_connect('localhost','root','','ntt');
         // $conn = mysqli_connect('localhost','id11138816_hieu','123456','id11138816_ntt');
+        $tieude = $_POST['tieude'];
+        $noidung = $_POST['noidung'];
+        $id = $_POST['id'];
         if(!$conn){
             die("Xảy ra lỗi");
         }
-        $tieude = $_POST['txtTieuDe'];
-        $noidung = $_POST['txtNoiDung'];
-        $sql = "INSERT INTO hoptac(header,content,img_url) VALUES ('$tieude','$noidung','$link1')";
+
+        $sql = "UPDATE hoptac SET header = '$tieude',content = '$noidung',img_url = '$link1' WHERE ID = '$id'";
         $result = mysqli_query($conn,$sql);
-        echo $tmpName;
+        mysqli_set_charset($conn,"UTF8");
+        echo $sql;
     }
 
-
-
-    $xtpht->parse("HOPTAC");
-    $error = $xtpht->text("HOPTAC");
+    $xtpu->parse("UPDATE1");
+    $error = $xtpu->text("UPDATE1");

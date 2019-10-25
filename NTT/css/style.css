@@ -167,6 +167,36 @@ form{
     float: left;
     color: blue;
 }
+.b-100{
+    width: 100px;
+    height: 100px;
+    background-color: #024282;
+    margin-left: -30px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 22px;
+}
+.sk-title{
+    color: black;
+}
+.sk-title:hover{
+    text-decoration: none;
+    color: black;;
+}
+.a-30{
+    margin-left: -40px;
+}
+.yel-color{
+    color: #aa914d;
+}
+.gray1{
+    color: gray;
+}
+.hr-mid{
+    height: 2px;
+    width: 200px;
+}
 /* footer */
 .f-color{
     background-color: #024282;
